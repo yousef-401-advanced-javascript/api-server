@@ -21,9 +21,7 @@
 - notes return the note value -->
 
 
-<!-- ### Setup -->
-
-
+### Setup
 
 #### How to initialize/run your application
 
@@ -34,7 +32,7 @@ json-server --watch ./data/db.json
 
 #### UML
 
-<!-- ![first patch](./uml/lab01.jpg)
-![second patch](./uml/notesLab03.jpg) -->
+![first patch](./assest/api-server.jpg)
+
 
 
