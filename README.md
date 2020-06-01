@@ -8,15 +8,18 @@
 ### Links and Resources
 
 
-- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/1)
+- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/2)
 - [swaggerHub URL](https://app.swaggerhub.com/apis/yousef-97/AOS2-allmethods/0.1)
 
-<!-- ### Modules -->
+### Modules
+- `express`
+- `supertest`
+
 
 
 <!-- ##### EXported Values and Methods -->
 
-<!-- ##### `constructors`
+<!-- ##### `classes`
 - input return objects 
 - notes return the note value -->
 
@@ -32,7 +35,7 @@ json-server --watch ./data/db.json
 
 #### UML
 
-![first patch](./assest/api-server.jpg)
+![second patch](./assest/api-server2.jpg)
 
 
 
