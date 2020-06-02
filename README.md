@@ -8,12 +8,17 @@
 ### Links and Resources
 
 
-- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/2)
+- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/3)
 - [swaggerHub URL](https://app.swaggerhub.com/apis/yousef-97/AOS2-allmethods/0.1)
 
 ### Modules
 - `express`
 - `supertest`
+- `mongoose`
+- `morgan`
+
+
+
 
 
 
@@ -27,15 +32,17 @@
 ### Setup
 
 #### How to initialize/run your application
+- nodemon 
+- npm start
 
-json-server --watch ./data/db.json
+<!-- json-server --watch ./data/db.json -->
 
 
 
 
 #### UML
 
-![second patch](./assest/api-server2.jpg)
+![second patch](./assest/api-server3.jpg)
 
 
 
