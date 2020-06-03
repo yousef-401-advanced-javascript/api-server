@@ -1,6 +1,6 @@
 'use strict';
-module.exports = (error, req, res, next)=>{
+module.exports = (err, req, res, next) => {
   res.status(500);
   res.statusMessage = 'Server Error';
-  res.json({error:error});
+  res.json({ error: err });
 };

@@ -8,8 +8,10 @@
 ### Links and Resources
 
 
-- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/3)
+- [class06 PR](https://github.com/yousef-401-advanced-javascript/api-server/pull/4)
 - [swaggerHub URL](https://app.swaggerhub.com/apis/yousef-97/AOS2-allmethods/0.1)
+- [Heroku Deployment](https://api-serverapp.herokuapp.com/api/v1/products)
+- [github Action](https://github.com/yousef-401-advanced-javascript/api-server/actions)
 
 ### Modules
 - `express`

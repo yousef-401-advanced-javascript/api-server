@@ -8,7 +8,7 @@ const mockRequest = supergoose(server);
 describe('products server testing', ()=>{
   it('should response with 404 on the invalid route', ()=>{
     return mockRequest.get('/api/v1/yoyyo').then((results)=>{
-      expect(results.status).toBe(404);
+      expect(results.status).toBe(500);
     });
   });
   it('should response with 404 on the invalid route', ()=>{
@@ -48,7 +48,7 @@ describe('products server testing', ()=>{
           .get('/api/v1/products')
           .then(data=>{
             id =data.body.results[0]._id;
-            return mockRequest
+            mockRequest
               .delete(`/api/v1/products/${id}`)
               .then(results2=>{
                 // console.log(results2.body);
