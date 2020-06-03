@@ -98,7 +98,7 @@ describe('server testing', ()=>{
         return mockRequest
           .get('/api/v1/products')
           .then(data=>{
-            console.log(results.body);
+            // console.log(results.body);
             id =data.body.results[0]._id;
             return mockRequest
               .get(`/api/v1/products/${id}`)
