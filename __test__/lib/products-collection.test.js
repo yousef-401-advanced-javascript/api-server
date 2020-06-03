@@ -34,7 +34,6 @@ describe('products Models', ()=>{
   });
   it('delete', ()=>{
     let id;
-    // let newObj = {category:'hhhhhhhhhh', name:'wooooooooooooo', display_name:'mmmmmmmmmmmmmm', description:'jjjjjjjjjj'};
     return products.get().then(results=>{
       // console.log(results[0]);
       id = results[0]._id;
