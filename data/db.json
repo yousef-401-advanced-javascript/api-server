@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "closthes",
+      "display-name": "clothes",
+      "description": "ggggggggg",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "category": "electronics",
+      "name": "laptop",
+      "display-name": "dell",
+      "description": "good one",
+      "id": 2
+    }
+  ]
+}
