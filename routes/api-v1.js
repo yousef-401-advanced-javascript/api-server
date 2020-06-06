@@ -11,10 +11,15 @@ router.param('model', getModel);
 router.get('/:model', getAllHandler);
 router.get('/:model/:id', getOneHandler);
 router.post('/:model', postAllHandler);
-router.put('/:model/:id', putAllHandler);
+router.put('/:model/:id', updateAllHandler);
 router.delete('/:model/:id', deleteAllHandler);
 
-
+/**
+ * / Get All Handler (All Routes)
+ * @param req
+ * @param res
+ * @param next
+ */
 //////////////////get  \\\\\\\\\\\\\\\\
 function getAllHandler(req, res, next){
   let id = req.params.id;
@@ -25,6 +30,12 @@ function getAllHandler(req, res, next){
   }).catch((err) => next(err.message));
   
 }
+/**
+ * / Get One Handler (All Routes)
+ * @param req
+ * @param res
+ * @param next
+ */
 /////////////get by id\\\\\\\\\\\\\
 function getOneHandler(req, res, next){
   let id = req.params.id;
@@ -36,7 +47,14 @@ function getOneHandler(req, res, next){
     
 }
 
-/////////////////put   create\\\\\\\\\\\\
+/**
+ * / Post All Handler (All Routes)
+ * @param req
+ * @param res
+ * @param next
+ */
+
+/////////////////post   create\\\\\\\\\\\\
 function postAllHandler(req, res, next){
   req.model.create(req.body)
     .then(data=>{
@@ -44,9 +62,14 @@ function postAllHandler(req, res, next){
     })
     .catch((err) => next(err.message));
 }
-
-////////////////post\\\\\\\\\\\
-function putAllHandler(req, res, next){
+/**
+ * / Update All Handler (All Routes)
+ * @param req
+ * @param res
+ * @param next
+ */
+////////////////update\\\\\\\\\\\
+function updateAllHandler(req, res, next){
   const id = req.params.id;
   const updateing = req.body;
   req.model.update(id, updateing).then(data=>{    
@@ -54,6 +77,12 @@ function putAllHandler(req, res, next){
   }).catch((err) => next(err.message));
 }
 
+/**
+ * / Delete Handler (All Routes)
+ * @param req
+ * @param res
+ * @param next
+ */
 ////////////delete\\\\\\\\\\\\\\\
 function deleteAllHandler(req, res, next){
   const id = req.params.id;
