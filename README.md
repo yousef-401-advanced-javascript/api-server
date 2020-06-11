@@ -13,7 +13,7 @@
 
 ### Modules
 - `express`
-- `supertest`
+<!-- - `supertest` -->
 
 
 
@@ -28,7 +28,9 @@
 
 #### How to initialize/run your application
 
-json-server --watch ./data/db.json
+<!-- json-server --watch ./data/db.json -->
+- nodemon
+- npm start
 
 
 
