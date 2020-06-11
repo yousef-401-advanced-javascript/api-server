@@ -1,0 +1,32 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousef-401-advanced-javascript/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yousef-401-advanced-javascript/api-server/issues"
+  },
+  "homepage": "https://github.com/yousef-401-advanced-javascript/api-server#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "supertest": "^4.0.2"
+  }
+}
